@@ -1,3 +1,12 @@
-const $root = document.getElementById("root");
+import App from "./App";
+import Router from "./core/Router";
 
-$root.innerHTML = "Hello Pelog !";
+declare global {
+  interface Window{
+    router: Router;
+  }
+}
+
+const $root = document.getElementById("root");
+new App($root, {});
+window.router = new Router();
