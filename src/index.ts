@@ -8,5 +8,5 @@ declare global {
 }
 
 const $root = document.getElementById("root");
-new App($root, {});
+const app = new App($root, {});
 window.router = new Router();
