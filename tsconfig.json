@@ -6,8 +6,15 @@
     "module": "es6",
     "target": "es6",
     "jsx": "react",
+    "lib": ["es2018", "dom", "dom.iterable"],
     "allowJs": true,
-    "moduleResolution": "node"
-  
-  }
+    "moduleResolution": "node",
+    "baseUrl": "src/",
+    "paths": {
+      "*": ["_packages/*", "*"]
+    },
+    "typeRoots": ["src/type"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
