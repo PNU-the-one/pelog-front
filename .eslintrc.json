@@ -25,7 +25,13 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "class-methods-use-this": "off",
+    "implicit-arrow-linebreak": "off",
+    "comma-dangle": "off",
+    "no-undef": "off",
+    "object-curly-newline": "off",
+    "operator-linebreak": "off"
   },
   "settings": {
     "import/resolver": {
