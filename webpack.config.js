@@ -13,7 +13,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Output Management",
-      template: "src/index.html",
+      template: "public/index.html",
     }),
   ],
   module: {
@@ -29,6 +29,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        loader: "file-loader",
         type: "asset/resource",
       },
       {
@@ -39,10 +40,11 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
+    modules: [path.resolve(__dirname, "src"), "node_modules"],
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, "dist"),
+      directory: path.join(__dirname, "public"),
     },
     open: true,
     port: "auto",
