@@ -1,0 +1,17 @@
+div.nightmode{
+  width: 24px;
+  animation: nightmode .5s;
+  
+}
+
+@keyframes nightmode {
+  from{
+    transform: scale(0) rotate(-90deg);
+  }
+  to{
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+
+
