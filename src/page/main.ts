@@ -13,7 +13,10 @@ class Main extends Component{
   mounted(){
     const $header = this.$target.querySelector('[data-component="Header"]');
     new Header($header, {});
+<<<<<<< HEAD
 >>>>>>> db879c9 (feat: add logo, nightmode btn)
+=======
+>>>>>>> 09299bc (feat: add logo, nightmode btn)
   }
 }
 
