@@ -1,3 +1,4 @@
+import Dropdown from "component/Dropdown/dropdown";
 import Component from "core/Component";
 
 
@@ -20,7 +21,9 @@ export default class Submenu extends Component{
         })
     }
     dropDown(){
-        console.log("DROPDOWN");
+
+        const $dropdown = this.$target.querySelector('[data-component="dropdown"]')
+        new Dropdown($dropdown,{})
     }
 
 }
