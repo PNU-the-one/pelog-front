@@ -12,4 +12,6 @@ export default class Filter extends Component{
     }
     mounted(){
     }
+    setEvent(){
+    }
 }
