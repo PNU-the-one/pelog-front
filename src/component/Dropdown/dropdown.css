@@ -5,7 +5,14 @@ div.dropdown li + li{
 }
 div.dropdown li{
   padding: 12px 16px;
+  font-size: 13px;
+  text-align: left;
 }
+
+div.dropdown li.active{
+  color:#12B886
+}
+
 div.dropdown li:hover{
   background-color: #F8F9FA;
 }
@@ -22,3 +29,5 @@ div.dropdown{
   margin: 0px;
   padding: 0px;
 }
+
+

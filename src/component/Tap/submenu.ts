@@ -15,15 +15,5 @@ export default class Submenu extends Component{
     mounted(){
 
     }
-    setEvent(){
-        this.addEvent('click', '.more', () =>{
-            this.dropDown();
-        })
-    }
-    dropDown(){
-
-        const $dropdown = this.$target.querySelector('[data-component="dropdown"]')
-        new Dropdown($dropdown,{})
-    }
 
 }
