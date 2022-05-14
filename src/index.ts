@@ -2,11 +2,11 @@ import App from "./App";
 import Router from "./core/Router";
 
 declare global {
-  interface Window{
+  interface Window {
     router: Router;
   }
 }
 
 const $root = document.getElementById("root");
-new App($root, {});
+const app = new App($root, {});
 window.router = new Router();
