@@ -7,7 +7,7 @@
 }
 .image-wrapper {
   height: 150px;
-  background-color: aqua;
+  background-color: #8984da;
 }
 .card-contents {
   padding: 15px;
@@ -38,4 +38,10 @@
 .card-writer-info > span {
   font-weight: bold;
   color: black;
+}
+.card-heart {
+  display: flex;
+}
+.card-heart > div {
+  margin: 0 5px 0 0;
 }

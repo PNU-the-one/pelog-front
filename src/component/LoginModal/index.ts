@@ -1,3 +1,4 @@
+import WelcomeIcon from "component/Icon/welcome";
 import Component from "core/Component";
 import "./index.css";
 
@@ -5,7 +6,7 @@ class LoginModal extends Component {
   template(): string {
     return `<div class='login_modal'>
       <div class='login_modal_left'>
-        <img src='' />
+        <div></div>
         <p>환영합니다!</p>
       </div>
       <div class='login_modal_right'>
@@ -31,6 +32,12 @@ class LoginModal extends Component {
         <p>아직 회원이 아니신가요?<a href="#">회원가입</a></p>
       </div>
     </div>`;
+  }
+
+  mounted(): void {
+    const $right = this.$target.querySelector(".login_modal_left > div");
+
+    const welcome = new WelcomeIcon($right);
   }
 }
 

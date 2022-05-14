@@ -5,9 +5,10 @@
 }
 .login_modal_left {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 35%;
+  width: 38%;
   background-color: #f8f9fa;
   color: #495057;
   font-size: 22px;
@@ -18,7 +19,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: end;
-  width: 65%;
+  width: 62%;
   padding: 20px;
 }
 .login_modal_right > .cancel_button {

@@ -1,5 +1,5 @@
+import HeartIcon from "component/Icon/heart";
 import Component from "core/Component";
-import heart from "../../../public/image/heart.svg";
 import "./index.css";
 
 export default class Card extends Component {
@@ -30,11 +30,17 @@ export default class Card extends Component {
             <span>${writer}</span>
           </a>
           <div class='card-heart'>
-            <img src='${heart}'/>
+            <div></div>
             <span>${hearts}<span/>
           </div>
         </div>
       </div>
     `;
+  }
+
+  mounted(): void {
+    const $wrapper = this.$target.querySelector(".card-heart > div");
+
+    const heartIcon = new HeartIcon($wrapper);
   }
 }
