@@ -14,12 +14,12 @@ export default class Header extends Component{
       <div id='header'>
         <div data-component='Logo'></div>
         
-        <div data-component='Login'></div>
-        <div data-component='Search'></div>
-        <div data-component='NightMode'></div>
-        
-        
-        <div data-component='profile'></div>
+        <div class="header-menu">
+          <div data-component='NightMode'></div>
+          <div data-component='Search'></div>
+          <div data-component='Login'></div>
+          <div data-component='profile'></div>
+        </div>
       </div>
     `
   }
