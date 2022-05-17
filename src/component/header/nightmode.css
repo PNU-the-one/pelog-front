@@ -1,17 +1,28 @@
 div.nightmode{
-  width: 24px;
-  height: 24px;
-  
   animation: nightmode .5s backwards;
-  
+
+}
+
+[data-component="NightMode"]{
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.25rem;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 @keyframes nightmode {
   from{
-    transform: translateY(-50%) scale(0) rotate(-90deg);
+    transform: scale(0) rotate(-90deg);
   }
   to{
-    transform: translateY(-50%) scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
   }
 }
 

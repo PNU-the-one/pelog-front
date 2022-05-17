@@ -1,15 +1,16 @@
-import Tap from "component/Tap/tap";
+import Header from "component/header/header";
 import Component from "./core/Component";
+
 export default class App extends Component{
   template(){
     return `
+    <div data-component="Header"></div>
     <div data-component="routeview"></div>
-    <div data-component="Tap"></div>
     `;
   }
   mounted(){
-    const $tap = this.$target.querySelector('[data-component="Tap"]');
-    new Tap($tap,{});
+    const $header = this.$target.querySelector('[data-component="Header"]');
+    new Header($header, {});
   }
   
 }

@@ -1,4 +1,5 @@
 import Component from "../../core/Component";
+import "./recent.css";
 export default class Recent extends Component{
   setup(){
   }

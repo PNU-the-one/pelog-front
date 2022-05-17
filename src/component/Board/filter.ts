@@ -1,5 +1,6 @@
 import Component from "../../core/Component";
 import Dropdown from "component/Dropdown/dropdown";
+import "./filter.css";
 
 
 export default class Filter extends Component{
