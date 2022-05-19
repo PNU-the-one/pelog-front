@@ -13,7 +13,7 @@ export default class Filter extends Component{
         return `
         <div class='filter'>
         ${this.state.filter}<svg width='1em' height='1em'><path d="M7 10l5 5 5-5z"></path></svg>
-        <div data-component="Dropdown-filter" style="display:none"></div>
+            <div data-component="Dropdown-filter" style="display:none"></div>
         </div>
         `
     }
@@ -29,7 +29,7 @@ export default class Filter extends Component{
 
             const $filter = this.$target.querySelector('.filter')
             const top = $filter.getBoundingClientRect().top;
-            const left = $filter.getBoundingClientRect().left;
+            const right = $filter.getBoundingClientRect().right;
       
             const $dropdown = this.$target.querySelector('[data-component="Dropdown-filter"]');
       
@@ -38,8 +38,7 @@ export default class Filter extends Component{
               $dropdown.setAttribute('class', `fadeout`);
               return;
             }
-      
-            $dropdown.setAttribute('style', `position:absolute; display:block; top:${top-40}px; left:${left-300}px`);
+            $dropdown.setAttribute('style', `position:absolute; display:block; top:${top-50}px; right:${1}rem`);
             $dropdown.setAttribute('class', `fadein`);
             
           })

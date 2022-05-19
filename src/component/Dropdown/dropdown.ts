@@ -28,9 +28,10 @@ export default class Dropdown extends Component{
       const list:[] = this.state.list;
       const term = e.target.innerText;
       this.props.setFilter(term);
-      
-
-    })
+    });
     
+    this.addEvent('click', 'body', (e:any)=>{
+      console.log(e);
+    })
   }
 }

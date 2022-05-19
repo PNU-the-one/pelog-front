@@ -23,7 +23,6 @@ export default class Tap extends Component{
           </div>
           <div data-component="Filter" style='display:${selected == "tranding" || selected == "" ? "" : "none"};'></div>
         </div>
-      
       <div data-component="Submenu"></div>
     </div>
     </div>
