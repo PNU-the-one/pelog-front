@@ -1,0 +1,14 @@
+[data-component="Cardlist"]{
+  display: flex;
+  margin-top: 2rem;
+}
+
+#cardlist{
+  display: flex;
+  margin: -1rem;
+  flex-wrap: wrap;
+}
+
+#cardlist > *{
+  margin: 1rem;
+}
