@@ -6,6 +6,7 @@ import Submenu from "./submenu";
 import Dropdown from "component/Dropdown/dropdown";
 import "./board.css";
 import Tap from "./tap";
+import Cardlist from "./Cardlist";
 
 export default class Board extends Component{
   setup(){
@@ -15,21 +16,19 @@ export default class Board extends Component{
   }
   
   template(){
-    
     return `
     <div id='board'>
       <div data-component="Tap"></div>
+      <div data-component="Cardlist"></div>
     </div>`
   }
   mounted(){
     const $tap = this.$target.querySelector('[data-component="Tap"]');
+    const $cardlist = this.$target.querySelector('[data-component="Cardlist"]');
 
     const selected = this.state.selected;
     new Tap($tap, {selected:selected, setSelect:this.setSelect.bind(this)});
-
-    // // new Dropdown($dropdown_filter, {list:["오늘", "이번 주", "이번 달", "올해"], selected:1});
-    // new Dropdown($dropdown_submenu, {list:["공지사항", "태그 목록", "서비스 정책", "Slack"]});
-  
+    new Cardlist($cardlist, {});
   }
 
   setEvent(){

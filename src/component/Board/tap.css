@@ -73,14 +73,3 @@
   
 }
 
-@media (max-width: 1919px){
-  #tap{
-    width: 1376px;
-  }
-}
-
-@media (max-width: 1440px){
-  #tap{
-    width: 1024px;
-  }
-}
