@@ -14,6 +14,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Output Management",
       template: "public/index.html",
+      cache: false,
     }),
   ],
   module: {
@@ -47,6 +48,7 @@ module.exports = {
     modules: [path.resolve(__dirname, "src"), "node_modules"],
   },
   devServer: {
+    hot: true,
     static: {
       directory: path.join(__dirname, "public"),
     },
