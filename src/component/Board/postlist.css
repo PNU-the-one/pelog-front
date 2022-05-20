@@ -1,14 +1,14 @@
-[data-component="Cardlist"]{
+[data-component="Postlist"]{
   display: flex;
   margin-top: 2rem;
 }
 
-#cardlist{
+#postlist{
   display: flex;
   margin: -1rem;
   flex-wrap: wrap;
 }
 
-#cardlist > *{
+#postlist > *{
   margin: 1rem;
 }
