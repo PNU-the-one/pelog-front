@@ -9,7 +9,6 @@
     "lib": ["es2018", "dom", "dom.iterable"],
     "allowJs": true,
     "moduleResolution": "node",
-<<<<<<< HEAD
     "baseUrl": "src/",
     "paths": {
       "*": ["_packages/*", "*"]
@@ -18,8 +17,4 @@
   },
   "include": ["src"],
   "exclude": ["node_modules"]
-=======
-  
-  }
->>>>>>> 09299bc (feat: add logo, nightmode btn)
 }
