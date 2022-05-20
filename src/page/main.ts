@@ -9,6 +9,10 @@ class Main extends Component{
     const $board = this.$target.querySelector('[data-component="Board"]');
     new Board($board, {});
   }
+  setEvent(){
+
+  }
+  
 }
 
 export default Main;

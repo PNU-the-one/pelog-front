@@ -37,7 +37,7 @@ class LoginModal extends Component {
   mounted(): void {
     const $right = this.$target.querySelector(".login_modal_left > div");
 
-    const welcome = new WelcomeIcon($right);
+    const welcome = new WelcomeIcon($right,{});
   }
 }
 
