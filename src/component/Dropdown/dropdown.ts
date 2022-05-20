@@ -30,8 +30,6 @@ export default class Dropdown extends Component{
       this.props.setFilter(term);
     });
     
-    this.addEvent('click', 'body', (e:any)=>{
-      console.log(e);
-    })
+
   }
 }
