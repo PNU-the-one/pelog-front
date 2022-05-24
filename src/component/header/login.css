@@ -1,0 +1,18 @@
+
+[data-component="Login"]{
+  height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  word-break: keep-all;
+  background: #212529;
+  color: #FFFFFF;
+  transition: all 0.125s ease-in 0s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}

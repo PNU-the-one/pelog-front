@@ -1,0 +1,14 @@
+[data-component="Postlist"]{
+  display: flex;
+  margin-top: 2rem;
+}
+
+#postlist{
+  display: flex;
+  margin: -1rem;
+  flex-wrap: wrap;
+}
+
+#postlist > *{
+  margin: 1rem;
+}

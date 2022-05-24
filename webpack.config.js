@@ -14,13 +14,18 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Output Management",
       template: "public/index.html",
+      cache: false,
     }),
   ],
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        test: /\.css$/,
+        include: path.join(__dirname, 'src/component'),
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
       },
       {
         test: /\.(tsx|ts)?$/,
@@ -43,6 +48,7 @@ module.exports = {
     modules: [path.resolve(__dirname, "src"), "node_modules"],
   },
   devServer: {
+    hot: true,
     static: {
       directory: path.join(__dirname, "public"),
     },
