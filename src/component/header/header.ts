@@ -2,7 +2,7 @@ import Component from "../../core/Component";
 import Login from "./login";
 import Logo from "./logo";
 import NightMode from "./nightmode";
-import Search from "./search";
+import SearchBtn from "./searchbtn";
 import "./header.css";
 
 export default class Header extends Component{
@@ -16,7 +16,7 @@ export default class Header extends Component{
         
         <div class="header-menu">
           <div data-component='NightMode'></div>
-          <div data-component='Search'></div>
+          <div data-component='SearchBtn'></div>
           <div data-component='Login'></div>
           <div data-component='profile'></div>
         </div>
@@ -27,12 +27,12 @@ export default class Header extends Component{
     const $logo = this.$target.querySelector('[data-component="Logo"]');
     const $nightmode = this.$target.querySelector('[data-component="NightMode"]')
     const $login = this.$target.querySelector('[data-component="Login"]');
-    const $search = this.$target.querySelector('[data-component="Search"]');
+    const $search = this.$target.querySelector('[data-component="SearchBtn"]');
     
     
     new Logo($logo, {});
     new NightMode($nightmode, {});
     new Login($login, {});
-    new Search($search, {});
+    new SearchBtn($search, {});
   }
 }
