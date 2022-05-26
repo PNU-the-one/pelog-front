@@ -15,7 +15,7 @@ export default class SearchBtn extends Component{
 
   setEvent(){
     this.addEvent('click', '.search-btn', ()=>{
-      console.log("라우팅 해야함");
+      window.router.push("/search");
     }
   )}
 

@@ -1,0 +1,38 @@
+[data-component="SearchBar"]{
+
+}
+
+#searchbar{
+  margin-bottom: 1.5rem;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  transition: all 0.125s ease-in 0s;
+  cursor: text;
+  border: 1px solid #343A40;
+  height: 4rem;
+  padding: 0px 1.5rem;
+}
+
+#searchbar input {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  height: 2rem;
+  transition: all 0.125s ease-in 0s;
+  flex: 1 1 0%;
+  display: block;
+  padding: 0px;
+  border: none;
+  outline: 0px;
+  background: transparent;
+  color: #495057;
+  min-width: 0px;
+}
+
+#searchbar svg{
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1.25rem;
+  fill: rgb(33, 37, 41);
+  flex-shrink: 0;
+}
