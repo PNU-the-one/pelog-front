@@ -54,5 +54,8 @@ module.exports = {
     },
     open: true,
     port: "auto",
+    historyApiFallback:{
+      index: '/index.html'
+    }
   },
 };
