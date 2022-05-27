@@ -1,4 +1,5 @@
 import Component from "../../core/Component";
+import "./logo.css";
 
 export default class Logo extends Component{
   setup(){
@@ -6,7 +7,7 @@ export default class Logo extends Component{
   }
   template(){
     return `
-      <div style="width:70pt; height:30pt">
+      <div id="logo" style="width:70pt; height:30pt">
         <svg width="70.000000pt" height="30.000000pt" version="1.0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
       
           <g transform="translate(0.000000, 40.000000) scale(0.04000,-0.040000)"
@@ -42,5 +43,10 @@ export default class Logo extends Component{
 
       </div>
     `
+  }
+  setEvent(){
+    this.addEvent('click', '#logo', ()=>{
+      window.router.push("/");
+    })
   }
 }
