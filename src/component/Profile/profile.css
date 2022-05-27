@@ -1,0 +1,14 @@
+.profile{
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgb(89, 11, 179);
+  box-sizing: border-box;
+}
+.profileDiv{
+  text-align: center;
+  line-height: 0rem;
+  height: 0rem;
+  font-size: 1rem;
+  color: white;
+}
