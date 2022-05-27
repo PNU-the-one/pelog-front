@@ -5,6 +5,7 @@ import NightMode from "./nightmode";
 import SearchBtn from "./searchbtn";
 import "./header.css";
 import Profile from "component/Profile/profile";
+import NewPost from "./newpost";
 
 export default class Header extends Component{
   setup(){
@@ -21,6 +22,7 @@ export default class Header extends Component{
         <div class="header-menu">
           <div data-component='NightMode'></div>
           <div data-component='SearchBtn'></div>
+          <div style="display:${this.state.login? '':'none'}" data-component='NewPost'></div>
           <div style="display:${this.state.login? 'none':''}" data-component='Login'></div>
           <div style="display:${this.state.login? '':'none'}" data-component='Profile'></div>
         </div>
@@ -39,6 +41,7 @@ export default class Header extends Component{
     const $login = this.$target.querySelector('[data-component="Login"]');
     const $search = this.$target.querySelector('[data-component="SearchBtn"]');
     const $profile = this.$target.querySelector('[data-component="Profile"]');
+    const $newpost = this.$target.querySelector('[data-component="NewPost"]');
     
     
     new Logo($logo, {});
@@ -46,6 +49,7 @@ export default class Header extends Component{
     new Login($login, {loginFun: login});
     new SearchBtn($search, {});
     new Profile($profile, {});
+    new NewPost($newpost, {});
   }
 
 }
