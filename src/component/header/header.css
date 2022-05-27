@@ -36,3 +36,55 @@ body {
   align-items: center;
   position: relative;
 }
+
+.profileBtns{
+  align-items: center;
+  cursor: pointer;
+}
+
+.profileBtns svg{
+  font-size: 1.5rem;
+  margin-left: 0.25rem;
+  color: #868E96;
+  transition: all 0.125s ease-in 0s;
+  margin-right: -0.4375rem
+}
+
+
+@keyframes fadein {
+  from{
+    opacity: 0;
+    transform: scale(.5);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+
+  }
+}
+
+@keyframes fadeout {
+  from{
+    opacity: 1;
+    transform: scale(1);
+  }
+  to{
+    opacity: 0;
+    transform: scale(.5);
+    visibility: hidden;
+  }
+}
+
+[data-component="Dropdown-profile"].fadein{
+  z-index: 1;
+  width: 200px;
+  transform-origin: 100% 0;
+  animation: fadein .5s ;
+}
+
+[data-component="Dropdown-profile"].fadeout{
+  z-index: 1;
+  width: 200px;
+  transform-origin: 100% 0;
+  animation: fadeout .5s forwards;
+}
