@@ -15,7 +15,6 @@ export default class App extends Component{
   }
   setEvent(){
     this.addEvent('click', 'body', (e:any)=>{
-      console.log(e);
       if(e.target.closest(".filter") || e.target.classList.contains("filter")){
         return;
       }
@@ -23,7 +22,6 @@ export default class App extends Component{
         return;
       }
       if(e.target.className != "dropdown"){
-        console.log("GOOD");
         const $dropdown = this.$target.querySelector(".fadein");
         if($dropdown){
           $dropdown.setAttribute("class", "fadeout");

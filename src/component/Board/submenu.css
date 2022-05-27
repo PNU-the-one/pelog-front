@@ -1,3 +1,7 @@
+[data-component="Submenu"]{
+  cursor: pointer;
+}
+
 @keyframes fadein {
   from{
     opacity: 0;
