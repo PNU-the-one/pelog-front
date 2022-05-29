@@ -1,5 +1,4 @@
-
-[data-component="Login"]{
+[data-component="Login"] {
   height: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -10,7 +9,7 @@
   font-weight: bold;
   word-break: keep-all;
   background: #212529;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: all 0.125s ease-in 0s;
   cursor: pointer;
   display: flex;

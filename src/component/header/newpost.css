@@ -1,4 +1,4 @@
-.newpost{
+.newpost {
   margin-right: 1.25rem;
   height: 2rem;
   padding-left: 1rem;
@@ -8,7 +8,7 @@
   outline: none;
   font-weight: bold;
   word-break: keep-all;
-  background: #F8F9FA;
+  background: #f8f9fa;
   border: 1px solid #212529;
   color: #212529;
   transition: all 0.125s ease-in 0s;
@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
 }
-.newpost:hover{
+.newpost:hover {
   background-color: #212529;
-  color: #F8F9FA;
+  color: #f8f9fa;
 }

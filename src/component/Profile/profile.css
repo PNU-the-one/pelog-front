@@ -1,4 +1,4 @@
-.profile{
+.profile {
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
@@ -9,7 +9,7 @@
   justify-content: center;
   cursor: pointer;
 }
-.profileDiv{
+.profileDiv {
   font-size: 1rem;
   color: white;
 }

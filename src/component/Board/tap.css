@@ -3,7 +3,7 @@
   margin-right: auto;
 } */
 
-#tap{
+#tap {
   margin-top: 1.5rem;
   display: flex;
   -webkit-box-pack: justify;
@@ -13,63 +13,58 @@
   position: relative;
 }
 
-.selectTap{
+.selectTap {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
   position: relative;
 }
 
-.underline.tranding{
+.underline.tranding {
   width: 50%;
   height: 2px;
   position: absolute;
   bottom: 0px;
-  background-color: #343A40;
-  animation: leftUnderLine .5s
-  
+  background-color: #343a40;
+  animation: leftUnderLine 0.5s;
 }
-.underline{
+.underline {
   width: 50%;
   height: 2px;
   position: absolute;
   bottom: 0px;
-  background-color: #343A40;
-
+  background-color: #343a40;
 }
 
-.underline.recent{
+.underline.recent {
   width: 50%;
   height: 2px;
   position: absolute;
   bottom: 0px;
-  left:50%;
-  background-color: #343A40;
-  animation: rightUnderLine .5s
+  left: 50%;
+  background-color: #343a40;
+  animation: rightUnderLine 0.5s;
 }
 
-.select{
+.select {
   display: flex;
   position: relative;
 }
 
 @keyframes rightUnderLine {
-  from{
-    left:0%;
+  from {
+    left: 0%;
   }
-  to{
-    left:50%;
+  to {
+    left: 50%;
   }
-  
 }
 
 @keyframes leftUnderLine {
-  from{
-    left:50%;
+  from {
+    left: 50%;
   }
-  to{
-    left:0%;
+  to {
+    left: 0%;
   }
-  
 }
-

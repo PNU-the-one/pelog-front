@@ -1,15 +1,14 @@
-[data-component="SearchBar"]{
-
+[data-component="SearchBar"] {
 }
 
-#searchbar{
+#searchbar {
   margin-bottom: 1.5rem;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
   transition: all 0.125s ease-in 0s;
   cursor: text;
-  border: 1px solid #343A40;
+  border: 1px solid #343a40;
   height: 4rem;
   padding: 0px 1.5rem;
 }
@@ -29,7 +28,7 @@
   min-width: 0px;
 }
 
-#searchbar svg{
+#searchbar svg {
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 1.25rem;

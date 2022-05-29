@@ -4,8 +4,7 @@ import "./index.css";
 
 export default class Card extends Component {
   template() {
-    const { link, imgSrc, title, summary, date, comments, writer, hearts } =
-      this.props;
+    const { link, imgSrc, title, summary, date, comments, writer, hearts } = this.props;
     return `
       <div class='card'>
         <a href=${link}>

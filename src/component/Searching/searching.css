@@ -1,4 +1,4 @@
-[data-component="Searching"]{
+[data-component="Searching"] {
   margin-top: 3.5rem;
   width: 768px;
   margin-left: auto;
@@ -6,10 +6,8 @@
   box-sizing: inherit;
 }
 
-
-@media (max-width:1024px)
-{
-  [data-component="Searching"]{
+@media (max-width: 1024px) {
+  [data-component="Searching"] {
     padding-left: 1rem;
     padding-right: 1rem;
     margin-top: 2rem;

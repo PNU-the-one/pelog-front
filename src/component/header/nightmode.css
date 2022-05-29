@@ -1,9 +1,8 @@
-div.nightmode{
-  animation: nightmode .5s backwards;
-
+div.nightmode {
+  animation: nightmode 0.5s backwards;
 }
 
-[data-component="NightMode"]{
+[data-component="NightMode"] {
   background: none;
   border: none;
   cursor: pointer;
@@ -18,13 +17,10 @@ div.nightmode{
 }
 
 @keyframes nightmode {
-  from{
+  from {
     transform: scale(0) rotate(-90deg);
   }
-  to{
+  to {
     transform: scale(1) rotate(0deg);
   }
 }
-
-
-

@@ -1,11 +1,10 @@
 import Component from "../../core/Component";
 import "./logo.css";
 
-export default class Logo extends Component{
-  setup(){
+export default class Logo extends Component {
+  setup() {}
 
-  }
-  template(){
+  template() {
     return `
       <div id="logo" style="width:70pt; height:30pt">
         <svg width="70.000000pt" height="30.000000pt" version="1.0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
@@ -42,11 +41,12 @@ export default class Logo extends Component{
         </svg>
 
       </div>
-    `
+    `;
   }
-  setEvent(){
-    this.addEvent('click', '#logo', ()=>{
+
+  setEvent() {
+    this.addEvent("click", "#logo", () => {
       window.router.push("/");
-    })
+    });
   }
 }
