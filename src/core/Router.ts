@@ -1,3 +1,4 @@
+import SearchPage from "page/searchpage";
 import Main from "../page/main";
 import Component from "./Component";
 
@@ -12,6 +13,11 @@ const routes: Route[] = [
     path: "/",
     name: "Main",
     Component: Main,
+  },
+  {
+    path: "/search",
+    name: "SearchPage",
+    Component: SearchPage
   },
 ];
 

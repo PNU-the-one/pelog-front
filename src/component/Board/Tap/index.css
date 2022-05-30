@@ -1,0 +1,70 @@
+/* [data-component="Tap"]{
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+#tap {
+  margin-top: 1.5rem;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.selectTap {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.underline.tranding {
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  bottom: 0px;
+  background-color: #343a40;
+  animation: leftUnderLine 0.5s;
+}
+.underline {
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  bottom: 0px;
+  background-color: #343a40;
+}
+
+.underline.recent {
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  background-color: #343a40;
+  animation: rightUnderLine 0.5s;
+}
+
+.select {
+  display: flex;
+  position: relative;
+}
+
+@keyframes rightUnderLine {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes leftUnderLine {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0%;
+  }
+}

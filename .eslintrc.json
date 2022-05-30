@@ -12,10 +12,7 @@
   "plugins": ["@typescript-eslint"],
   "rules": {
     "quotes": [2, "double", { "avoidEscape": false }],
-    "no-unused-vars": [
-      "warn",
-      { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
-    ],
+    "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -31,7 +28,9 @@
     "comma-dangle": "off",
     "no-undef": "off",
     "object-curly-newline": "off",
-    "operator-linebreak": "off"
+    "operator-linebreak": "off",
+    "linebreak-style": ["error", "windows"],
+    "no-new": 0
   },
   "settings": {
     "import/resolver": {
