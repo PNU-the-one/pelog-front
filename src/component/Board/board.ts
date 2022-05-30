@@ -1,7 +1,7 @@
 import Component from "../../core/Component";
 import "./board.css";
-import Tap from "./tap";
-import Postlist from "./postlist";
+import Tap from "./Tap";
+import Postlist from "./PostList";
 
 export default class Board extends Component {
   setup() {

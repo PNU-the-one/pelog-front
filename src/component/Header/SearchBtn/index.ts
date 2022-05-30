@@ -1,5 +1,5 @@
-import Component from "../../core/Component";
-import "./searchbtn.css";
+import Component from "core/Component";
+import "./index.css";
 
 export default class SearchBtn extends Component {
   setup() {}

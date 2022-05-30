@@ -1,5 +1,5 @@
-import Component from "../../core/Component";
-import "./logo.css";
+import Component from "core/Component";
+import "./index.css";
 
 export default class Logo extends Component {
   setup() {}

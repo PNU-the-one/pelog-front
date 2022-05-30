@@ -1,5 +1,5 @@
 import Component from "core/Component";
-import "./newpost.css";
+import "./index.css";
 
 class NewPost extends Component {
   template() {

@@ -1,5 +1,5 @@
 import Component from "core/Component";
-import "./profile.css";
+import "./index.css";
 
 class Profile extends Component {
   setup() {}

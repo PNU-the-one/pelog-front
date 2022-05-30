@@ -1,5 +1,5 @@
 import Component from "core/Component";
-import "./searchbar.css";
+import "./index.css";
 
 class SearchBar extends Component {
   setup() {}

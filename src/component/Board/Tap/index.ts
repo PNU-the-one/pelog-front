@@ -1,9 +1,9 @@
 import Component from "core/Component";
-import Tranding from "./tranding";
-import Recent from "./recent";
-import Filter from "./filter";
-import Submenu from "./submenu";
-import "./tap.css";
+import Tranding from "../Tranding";
+import Recent from "../Recent";
+import Filter from "../Filter";
+import Submenu from "../Submenu";
+import "./index.css";
 
 export default class Tap extends Component {
   setup() {}

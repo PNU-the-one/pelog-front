@@ -1,5 +1,5 @@
-import Component from "../../core/Component";
-import "./recent.css";
+import Component from "core/Component";
+import "./index.css";
 
 export default class Recent extends Component {
   setup() {}

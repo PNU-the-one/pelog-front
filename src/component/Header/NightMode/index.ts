@@ -1,5 +1,5 @@
-import Component from "../../core/Component";
-import "./nightmode.css";
+import Component from "core/Component";
+import "./index.css";
 
 export default class NightMode extends Component {
   setup() {

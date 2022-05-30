@@ -1,5 +1,5 @@
-import Component from "../../core/Component";
-import "./login.css";
+import Component from "core/Component";
+import "./index.css";
 
 export default class Login extends Component {
   setup() {}

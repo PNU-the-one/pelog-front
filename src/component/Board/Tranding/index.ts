@@ -1,5 +1,5 @@
-import Component from "../../core/Component";
-import "./tranding.css";
+import Component from "core/Component";
+import "./index.css";
 
 export default class Tranding extends Component {
   setup() {}

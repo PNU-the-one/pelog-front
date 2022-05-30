@@ -1,6 +1,6 @@
-import Dropdown from "component/Dropdown/dropdown";
+import Dropdown from "component/Dropdown";
 import Component from "core/Component";
-import "./submenu.css";
+import "./index.css";
 
 export default class Submenu extends Component {
   template() {

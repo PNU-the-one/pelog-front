@@ -1,5 +1,5 @@
 import Component from "core/Component";
-import "./dropdown.css";
+import "./index.css";
 
 //
 export default class Dropdown extends Component {

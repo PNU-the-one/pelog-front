@@ -1,7 +1,7 @@
 import Component from "core/Component";
-import SearchBar from "./searchbar";
-import "./searching.css";
-import SearchResult from "./searchresult";
+import SearchBar from "./Searchbar";
+import "./index.css";
+import SearchResult from "./SearchResult";
 
 class Searching extends Component {
   setup() {}

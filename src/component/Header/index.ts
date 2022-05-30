@@ -1,12 +1,12 @@
-import Profile from "component/Profile/profile";
-import Dropdown from "component/Dropdown/dropdown";
-import Component from "../../core/Component";
-import Login from "./login";
-import Logo from "./logo";
-import NightMode from "./nightmode";
-import SearchBtn from "./searchbtn";
-import "./header.css";
-import NewPost from "./newpost";
+import Profile from "component/Profile";
+import Dropdown from "component/Dropdown";
+import Component from "core/Component";
+import Login from "./Login";
+import Logo from "./Logo";
+import NightMode from "./NightMode";
+import SearchBtn from "./SearchBtn";
+import "./index.css";
+import NewPost from "./NewPost";
 
 export default class Header extends Component {
   setup() {

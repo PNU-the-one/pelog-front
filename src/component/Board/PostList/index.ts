@@ -1,5 +1,5 @@
 import Component from "core/Component";
-import "./postlist.css";
+import "./index.css";
 import Card from "component/Card";
 
 export default class Postlist extends Component {
