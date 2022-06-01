@@ -1,18 +1,23 @@
+import mainReducer from "reducer/mainReducer";
 import Action from "type/action";
 import Reducer from "type/reducer";
 
-let store = {};
+let store: any = {
+  isOpenLoginModal: false,
+};
 let reducer: Reducer;
-const listener: (() => void)[] = [];
+const listener: { [key: string]: Function } = {};
 
 const dispatch = (action: Action) => {
   if (!reducer) return;
   store = reducer(store, action);
-  listener.forEach((render) => render());
+  Object.keys(listener).forEach((key) => {
+    listener[key]();
+  });
 };
 
-const subscribe = (render: () => void) => {
-  listener.push(render);
+const subscribe = (key: string, render: () => void) => {
+  listener[key] = render;
 };
 
 const useSelector = (selector: (state: any) => any) => selector(store);
@@ -21,4 +26,6 @@ const configReducer = (newReducer: any) => {
   reducer = newReducer;
 };
 
-export { dispatch, subscribe, configReducer, useSelector };
+configReducer(mainReducer);
+
+export { dispatch, subscribe, useSelector };
