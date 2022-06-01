@@ -1,0 +1,30 @@
+.searched_profile {
+  display: flex;
+  align-items: center;
+}
+.searched_profile > span {
+  font-weight: bold;
+  font-size: 12px;
+}
+.searched_profile > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: blueviolet;
+  margin-right: 15px;
+}
+.searched_title > p {
+  font-weight: bold;
+  font-size: 22px;
+}
+.searched_content {
+  padding-bottom: 20px;
+}
+.searched_content > p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.searched_info {
+  color: #868e96;
+  font-size: 12px;
+}
