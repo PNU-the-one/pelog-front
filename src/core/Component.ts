@@ -9,8 +9,8 @@ class Component {
     this.$target = $target;
     this.props = props;
     this.setup();
-    this.setEvent();
     this.render();
+    this.setEvent();
   }
 
   setup() {}
@@ -36,17 +36,21 @@ class Component {
   addEvent(
     eventType: keyof HTMLElementEventMap,
     selector: string,
-    callback: Function
+    callback: Function,
+    options?: boolean | AddEventListenerOptions
   ) {
     const children = [...this.$target.querySelectorAll(selector)];
 
-    const isTarget = (target: Element) =>
-      children.includes(target) || target.closest(selector);
+    const isTarget = (target: Element) => children.includes(target) || target.closest(selector);
 
-    this.$target.addEventListener(eventType, (e) => {
-      if (!isTarget(e.target as Element)) return;
-      callback(e);
-    });
+    this.$target.addEventListener(
+      eventType,
+      (e) => {
+        if (!isTarget(e.target as Element)) return;
+        callback(e);
+      },
+      options
+    );
   }
 }
 
