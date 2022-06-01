@@ -1,14 +1,9 @@
-import Component from "core/Component";
 import "./index.css";
 
-class Modal extends Component {
-  template(): string {
-    return `
-      <div class='modal_background'>
-        <div class='modal_frame'></div>
-      </div>
-    `;
-  }
-}
+const Modal = ({ children }: { children: string }) => `
+  <div class='modal_background'>
+    <div class='modal_frame'>${children}</div>
+  </div>
+`;
 
 export default Modal;
