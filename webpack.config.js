@@ -21,11 +21,8 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        include: path.join(__dirname, 'src/component'),
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
+        include: path.join(__dirname, "src"),
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(tsx|ts)?$/,
@@ -54,8 +51,8 @@ module.exports = {
     },
     open: true,
     port: "auto",
-    historyApiFallback:{
-      index: '/index.html'
-    }
+    historyApiFallback: {
+      index: "/index.html",
+    },
   },
 };

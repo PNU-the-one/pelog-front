@@ -17,7 +17,7 @@ const routes: Route[] = [
   {
     path: "/search",
     name: "SearchPage",
-    Component: SearchPage
+    Component: SearchPage,
   },
 ];
 
@@ -43,7 +43,7 @@ class Router {
 
   render(route: Route) {
     const $routeview = document.querySelector("[data-component='routeview']");
-    const component = new route.Component($routeview, {});
+    new route.Component($routeview, {});
   }
 }
 

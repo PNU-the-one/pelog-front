@@ -21,6 +21,7 @@
   align-items: end;
   width: 62%;
   padding: 20px;
+  background-color: white;
 }
 .login_modal_right > .cancel_button {
   width: 20px;

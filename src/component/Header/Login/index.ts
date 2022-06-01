@@ -1,4 +1,5 @@
 import Component from "core/Component";
+import { dispatch } from "core/Store";
 import "./index.css";
 
 export default class Login extends Component {
@@ -11,8 +12,10 @@ export default class Login extends Component {
   }
 
   setEvent() {
-    this.addEvent("click", ".login-btn", () => {
-      this.props.loginFun();
+    const $loginBtn = this.$target.querySelector(".login");
+
+    $loginBtn.addEventListener("click", () => {
+      dispatch({ type: "OPEN_LOGIN_MODAL", payload: {} });
     });
   }
 }
