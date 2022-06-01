@@ -1,5 +1,6 @@
 import Header from "component/Header";
 import Component from "./core/Component";
+import "./App.css";
 
 export default class App extends Component {
   template() {
