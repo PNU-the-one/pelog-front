@@ -29,6 +29,7 @@
     "no-undef": "off",
     "object-curly-newline": "off",
     "operator-linebreak": "off",
+    "linebreak-style": ["error", "windows"],
     "no-new": 0
   },
   "settings": {
