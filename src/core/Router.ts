@@ -1,3 +1,4 @@
+import MyPelogPage from "page/mypelogpage";
 import SearchPage from "page/searchpage";
 import Main from "../page/main";
 import Component from "./Component";
@@ -18,6 +19,11 @@ const routes: Route[] = [
     path: "/search",
     name: "SearchPage",
     Component: SearchPage,
+  },
+  {
+    path: "/@",
+    name: "MyPelogPage",
+    Component: MyPelogPage,
   },
 ];
 

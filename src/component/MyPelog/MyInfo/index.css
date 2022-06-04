@@ -1,0 +1,55 @@
+[data-component="MyInfo"] {
+  margin-top: 5.625rem;
+}
+
+.myprofile {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.descriptionbox {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.descriptionbox > .name {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.descriptionbox > .description {
+  white-space: pre-wrap;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-top: 0.25rem;
+  color: var(--text2);
+  letter-spacing: -0.004em;
+}
+
+[data-component="MyProfile"] > div {
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: rgb(0 0 0 / 6%) 0px 0px 4px 0px;
+}
+
+.mylink > a > svg {
+  color: #868e96;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+.myinfo-underline {
+  background: #e9ecef;
+  width: 100%;
+  height: 1px;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}

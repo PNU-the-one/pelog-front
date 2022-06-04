@@ -11,7 +11,7 @@ import NewPost from "./NewPost";
 export default class Header extends Component {
   setup() {
     this.state = {
-      login: false,
+      login: true,
     };
   }
 
@@ -56,7 +56,7 @@ export default class Header extends Component {
     new SearchBtn($search, {});
     new Profile($profile, {});
     new NewPost($newpost, {});
-    new Dropdown($dropdown, { list: ["내 벨로그", "새 글 작성", "임시 글", "읽기 목록", "설정", "로그아웃"] });
+    new Dropdown($dropdown, { list: ["내 펠로그", "새 글 작성", "임시 글", "읽기 목록", "설정", "로그아웃"] });
   }
 
   setEvent() {
@@ -79,6 +79,12 @@ export default class Header extends Component {
     this.addEvent("click", "[data-component='Dropdown-profile']", () => {
       const $dropdown = this.$target.querySelector("[data-component='Dropdown-profile']");
       $dropdown.setAttribute("class", "fadeout");
+    });
+    this.addEvent("click", "[data-component='Dropdown-profile']", (e: any) => {
+      const item = e.target.innerText;
+      if (item === "내 펠로그") {
+        window.router.push("/@");
+      }
     });
   }
 }
