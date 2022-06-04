@@ -8,12 +8,11 @@ class Profile extends Component {
     const { src } = this.props;
     return `
       <div class='profile'>
-          <div class='profileDiv'>명성</div>
+          <img class='profileImg'></div>
       </div>
     `;
   }
 
-  // <img class='profileImg' src=''/>
   mounted() {}
 }
 
