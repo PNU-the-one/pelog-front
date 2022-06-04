@@ -1,0 +1,77 @@
+[data-component="MyPelogTap"] {
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+#pelogtap {
+  display: flex;
+  position: relative;
+}
+
+#pelogtap > a {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-size: 1.325rem;
+  width: 8rem;
+  height: 3rem;
+  color: #495057;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out 0s;
+  font-weight: 600;
+}
+
+#pelogtap > a.selected {
+  color: #20c997;
+}
+
+@keyframes postsUnder {
+  from {
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes seriesUnder {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 33.33%;
+  }
+}
+
+@keyframes aboutUnder {
+  from {
+  }
+  to {
+    left: 66.66%;
+  }
+}
+
+#pelogtap > div.mypelogtap-underline {
+  position: absolute;
+  width: 8rem;
+  height: 2px;
+  background: #20c997;
+  position: absolute;
+  bottom: -2px;
+  transition: left 0.25s ease-in-out 0s;
+  transition: all 0.5s;
+}
+
+#pelogtap > div.mypelogtap-underline.posts {
+  left: 0%;
+}
+#pelogtap > div.mypelogtap-underline.series {
+  left: 33.33%;
+}
+#pelogtap > div.mypelogtap-underline.about {
+  left: 66.66%;
+}
