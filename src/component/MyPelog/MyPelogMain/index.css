@@ -1,0 +1,52 @@
+#mypelogsearch .search input {
+  transition: all 0.125s ease-in 0s;
+  font-size: 0.875rem;
+  flex: 1 1 0%;
+  display: block;
+  line-height: 1rem;
+  height: 1rem;
+  padding: 0px;
+  border: none;
+  outline: 0px;
+  background: transparent;
+  color: var(--text2);
+  min-width: 0px;
+}
+
+#mypelogsearch .search {
+  display: flex;
+  height: 2.25rem;
+  border: 1px solid #adb5bd;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  -webkit-box-align: center;
+  align-items: center;
+  transition: all 0.125s ease-in 0s;
+  cursor: text;
+}
+#mypelogsearch section {
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+#mypelogtags {
+  position: relative;
+  width: 11.5rem;
+  left: -13.5rem;
+}
+
+#mypelogtags .title {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #adb5bd;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+#mypelogtags ul {
+  list-style: none;
+  padding-left: 0px;
+}

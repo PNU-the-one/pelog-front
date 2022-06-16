@@ -34,12 +34,25 @@ export default class MyPelogTap extends Component {
       }
       $t.setAttribute("class", "mypelogtap selected");
 
+      const $series = document.querySelector("[data-component='MyPelogSeries']");
+      const $about = document.querySelector("[data-component='MyPelogAbout']");
+      const $main = document.querySelector("[data-component='MyPelogMain']");
       if (tap === "글") {
         children[3].setAttribute("class", "mypelogtap-underline posts");
+        $main.setAttribute("style", "display:block");
+        $series.setAttribute("style", "display:none");
+        $about.setAttribute("style", "display:none");
       } else if (tap === "시리즈") {
         children[3].setAttribute("class", "mypelogtap-underline series");
+        // data-component="MyPelogSeries"
+        $main.setAttribute("style", "display:none");
+        $series.setAttribute("style", "display:block");
+        $about.setAttribute("style", "display:none");
       } else if (tap === "소개") {
         children[3].setAttribute("class", "mypelogtap-underline about");
+        $main.setAttribute("style", "display:none");
+        $series.setAttribute("style", "display:none");
+        $about.setAttribute("style", "display:block");
       }
       // this.props.setTap(tap);
     });
