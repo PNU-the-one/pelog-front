@@ -3,7 +3,7 @@
   margin-right: auto;
 }
 
-@media (max-width: 1919px) {
+@media (max-width: 2000px) {
   [data-component="Board"] {
     width: 1376px;
   }
