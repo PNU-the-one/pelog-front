@@ -1,0 +1,191 @@
+#setting section.setting-info {
+  margin-top: 4rem;
+}
+
+#setting div.wrapper {
+  display: flex;
+}
+
+#setting button.edit {
+  display: inline;
+  outline: none;
+  padding: 0px;
+  border: none;
+  display: inline;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #12b886;
+  text-decoration: underline;
+  background: none;
+  cursor: pointer;
+}
+
+#setting div.wrapper div.block-for-mobile {
+  flex: 1 1 0%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+#setting div.wrapper div.block-for-mobile div.edit-wrapper {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+#setting div.description {
+  margin-top: 0.875rem;
+  color: #868e96;
+  font-size: 0.875rem;
+}
+
+#setting div.information {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#setting div.information + div.information {
+  border-top: 1px solid #f1f3f5;
+}
+
+#setting div.wrapper div.title-wrapper {
+  width: 9.5rem;
+  flex-shrink: 0;
+}
+
+#setting {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 768px;
+  padding-bottom: 5rem;
+}
+
+#setting button.withdarw {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: #ff6b6b;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 0px 1.25rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+#setting ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+#setting ul li {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+#setting ul li .on-off {
+  cursor: pointer;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 2.875rem;
+  height: 1.5rem;
+  background: rgb(134, 142, 150);
+  transition: all 0.125s ease-in 0s;
+  border-radius: 1.125rem;
+  padding: 0.125rem;
+}
+
+/* #setting ul li .circle {
+  transform: translate(0rem);
+  box-shadow: rgb(0 0 0 / 5%) 2px 0px 4px;
+} */
+
+#setting section.setting-profile {
+  display: flex;
+  height: 13.75rem;
+}
+
+#setting div.thumbnail-area {
+  padding-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#setting div.thumbnail-area img {
+  object-fit: cover;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+#setting button.img-upload {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: #12b886;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 0px 1.25rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+#setting button.img-del {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  color: #12b886;
+  border-radius: 4px;
+  padding: 0px 1.25rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+#setting .thumbnail-area button + button {
+  margin-top: 0.5rem;
+  margin-left: 0px;
+}
+
+#setting .info-area {
+  flex: 1 1 0%;
+  padding-left: 1.5rem;
+  border-left: 1px solid #f1f3f5;
+}
+
+#setting .info-area p {
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: #868e96;
+}
+
+#setting .info-area h2 {
+  font-size: 2.25rem;
+  margin: 0px;
+  line-height: 1.5;
+  color: #212529;
+}

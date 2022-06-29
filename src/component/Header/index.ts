@@ -84,6 +84,8 @@ export default class Header extends Component {
       const item = e.target.innerText;
       if (item === "내 펠로그") {
         window.router.push("/@");
+      } else if (item === "설정") {
+        window.router.push("/setting");
       }
     });
   }

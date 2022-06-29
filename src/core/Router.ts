@@ -1,3 +1,4 @@
+import Setting from "component/Setting";
 import MyPelogPage from "page/mypelogpage";
 import SearchPage from "page/searchpage";
 import Main from "../page/main";
@@ -24,6 +25,11 @@ const routes: Route[] = [
     path: "/@",
     name: "MyPelogPage",
     Component: MyPelogPage,
+  },
+  {
+    path: "/setting",
+    name: "Setting",
+    Component: Setting,
   },
 ];
 
