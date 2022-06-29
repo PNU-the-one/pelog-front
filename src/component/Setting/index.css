@@ -103,10 +103,21 @@
   padding: 0.125rem;
 }
 
-/* #setting ul li .circle {
-  transform: translate(0rem);
-  box-shadow: rgb(0 0 0 / 5%) 2px 0px 4px;
-} */
+#setting .contents {
+  flex: 1 1 0%;
+  font-size: 1rem;
+  color: #495057;
+  line-height: 1.5;
+}
+#setting .contents span {
+  width: 14rem;
+}
+#setting ul li .circle {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 0.625rem;
+  background: #ffffff;
+}
 
 #setting section.setting-profile {
   display: flex;
